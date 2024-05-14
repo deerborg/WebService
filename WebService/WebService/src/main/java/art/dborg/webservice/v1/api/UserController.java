@@ -4,8 +4,8 @@ import art.dborg.webservice.v1.business.abstracts.UserService;
 import art.dborg.webservice.v1.core.config.modelMapper.ModelMapperService;
 import art.dborg.webservice.v1.core.result.ResultData;
 import art.dborg.webservice.v1.core.utilites.ResultHelper;
-import art.dborg.webservice.v1.dto.request.UserSaveRequest;
-import art.dborg.webservice.v1.dto.response.UserResponse;
+import art.dborg.webservice.v1.dto.request.user.UserSaveRequest;
+import art.dborg.webservice.v1.dto.response.user.UserResponse;
 import art.dborg.webservice.v1.entity.User;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -20,7 +20,7 @@ public class UserController {
     private final ModelMapperService modelMapperService;
 
     @PostMapping
-    @ResponseStatus(HttpStatus.OK)
+    @ResponseStatus(HttpStatus.CREATED)
     public ResultData<UserResponse> createUser(@Valid @RequestBody UserSaveRequest userSaveRequest){
         return ResultHelper.CREATED(modelMapperService.forResponse().map(userService.save(modelMapperService.forRequest().map(userSaveRequest,User.class)),UserResponse.class));
     }

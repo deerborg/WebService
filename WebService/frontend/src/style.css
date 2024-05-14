@@ -1,0 +1,79 @@
+/* styles.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease; /* Kartın gölgesine geçiş efekti ekledik */
+}
+
+.form-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Mouse ile etkileşim sağlandığında gölgeyi büyütüyoruz */
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.form-group input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+}
+
+.form-group button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 11px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.form-group button:hover {
+    background-color: #ccc;
+}
+
+.form-group button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.form-group button:disabled:hover {
+    background-color: #888;
+}

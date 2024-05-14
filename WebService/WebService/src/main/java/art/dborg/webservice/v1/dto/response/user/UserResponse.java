@@ -1,4 +1,4 @@
-package art.dborg.webservice.v1.dto.response;
+package art.dborg.webservice.v1.dto.response.user;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;

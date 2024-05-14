@@ -1,4 +1,4 @@
-package art.dborg.webservice.v1.dto.request;
+package art.dborg.webservice.v1.dto.request.user;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;

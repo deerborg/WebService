@@ -2,16 +2,17 @@ package art.dborg.webservice.v1.core.utilites;
 
 import art.dborg.webservice.v1.core.result.Result;
 import art.dborg.webservice.v1.core.result.ResultData;
+import org.springframework.http.HttpStatus;
 
 public class ResultHelper {
 
     public static <T> ResultData<T> CREATED(T data) {
-        return new ResultData<>(true, Message.CREATED, "201", data);
+        return new ResultData<>(true, Message.CREATED, HttpStatus.CREATED.toString(), data);
     }
 
 
     public static <T> ResultData<T> OK(T data) {
-        return new ResultData<>(true, Message.OK, "200", data);
+        return new ResultData<>(true, Message.OK, HttpStatus.OK.toString(), data);
     }
 
 
