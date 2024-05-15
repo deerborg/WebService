@@ -2,12 +2,15 @@ package art.dborg.webservice.v1.business.concretes;
 
 import art.dborg.webservice.v1.business.abstracts.UserService;
 import art.dborg.webservice.v1.core.config.modelMapper.ModelMapperService;
+import art.dborg.webservice.v1.core.exception.ForceUpdateException;
+import art.dborg.webservice.v1.core.utilites.Message;
 import art.dborg.webservice.v1.dao.UserRepository;
 import art.dborg.webservice.v1.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 
 @Service
 @RequiredArgsConstructor

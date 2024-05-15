@@ -1,6 +1,7 @@
 package art.dborg.webservice.v1.dto.request.user;
 
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,13 +12,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserSaveRequest {
 
-    @NotNull(message = "Username not null")
+    @NotEmpty(message = "Username not null")
     private String username;
 
-    @Email
-    @NotNull(message = "Email not null")
+    @Email(message = "Bad Email format")
+    @NotEmpty(message = "Email not null")
     private String email;
 
-    @NotNull(message = "Password not null")
+    @NotEmpty(message = "Password not null")
     private String password;
 }

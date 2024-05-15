@@ -6,7 +6,7 @@ public class Message {
     public static final String NULL_POINTER = "Please enter the ID values of dependent classes."; // Message for null pointers
     public static final String NULL_VALUES = "Please enter all requested data as JSON."; // Message for null values
     public static final String UPDATE_NOT_FOUND_ID = "Enter the 'VALID ID' for 'UPDATE'"; // Message for update operation with invalid ID
-    public static final String NOT_UNIQUE = "Values must be unique"; // Message for non-unique values
+    public static final String NOT_UNIQUE = "Already Exist"; // Message for non-unique values
     public static final String CREATED = "Saved"; // Message for successful object creation
     public static final String OK = "Ok"; // General success message
     public static final String DELETED = "Deleted"; // Message for successful deletion
