@@ -15,4 +15,5 @@ public class Message {
     public static final String RESOURCE_NOT_FOUND = "INVALID URL"; // Message for invalid URL
     public static final String UNREADABLE = "There is a syntax error in the JSON request"; // Message for unreadable JSON request
     public static final String MISSING_PARAMETER = "Missing parameter entry.";
+    public static final String MAIL_EXCEPTION = "Mail server Error";
 }

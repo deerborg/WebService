@@ -73,4 +73,8 @@ public class ResultHelper {
         return new Result(false, Message.MISSING_PARAMETER, "502");
     }
 
+    public static Result MAIL_EXCEPTION() {
+        return new Result(false, Message.MAIL_EXCEPTION, "502");
+    }
+
 }

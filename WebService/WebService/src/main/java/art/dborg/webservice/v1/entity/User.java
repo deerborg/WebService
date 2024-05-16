@@ -25,4 +25,10 @@ public class User {
 
     @Column(name = "user_password")
     private String password;
+
+    @Column(name = "user_active")
+    private boolean active = false;
+
+    @Column(name = "user_active_token",unique = true)
+    private String token;
 }
