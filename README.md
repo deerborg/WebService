@@ -80,4 +80,4 @@ WebService provides a simple interface for user registration. The React applicat
 
 ## License
 
-This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE) file.
+This project is licensed under the MIT License. For more information, see the [LICENSE](LICENSE).
